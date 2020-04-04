@@ -10,11 +10,33 @@
 // when arrow is clicked, change corresponding img to a star for .5 sec function chosenImg()
 
 // display init imgs
+const leftDiv = $("#left")
+const leftImg = $("<img class='image'>").attr("src", "public/img/left.png");
+leftDiv.append(leftImg)
+
+const upDiv = $("#up")
+const upImg = $("<img class='image'>").attr("src", "public/img/up.png");
+upDiv.append(upImg)
+
+const rightDiv = $("#right")
+const rightImg = $("<img class='image'>").attr("src", "public/img/right.png");
+rightDiv.append(rightImg)
+
+const downDiv = $("#down")
+const downImg = $("<img class='image'>").attr("src", "public/img/down.png");
+downDiv.append(downImg)
+
 // display current score boared
-const score = $("#score");
+let score = 0;
+const scoreDiv = $("#score");
+scoreDiv.html(`Current Score: ${score}`)
+
 // display high score
-const highScore = $("#high-score");
-highScore.html("0")
+let highScore = 0
+const highScoreDiv = $("#high-score");
+highScoreDiv.html(`High Score: ${highScore}`)
+
+
 // on click, 1++ if correct
 // on click, end game if !correct
 
