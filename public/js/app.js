@@ -41,6 +41,13 @@ highScoreDiv.html(`High Score: ${highScore}`)
 // on click, end game if !correct
 
 //create comp
-// assign arrow or wasd to numbers 1,2,3,4
-// random select number
+function comp() {
+    // random select number
+    const randomNum = Math.floor(Math.random() * 4) + 1
+    // assign arrow or wasd to numbers 1,2,3,4
+    // if 1 go up or w
+    // if 2 go left or a
+    // if 3 go down or s
+    // if 4 go right or d
+}
 // when number is selected, chosenImg()
